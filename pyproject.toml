@@ -1,0 +1,34 @@
+[project]
+name = "tg-rpc-bot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pydantic-settings>=2.10.1",
+    "python-telegram-bot>=22.3",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.3.0",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle
+    "F",  # Pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "ASYNC",  # flake8-async
+    "T10",  # flake8-debugger
+    "ISC",  # flake8-implicit-str-concat
+    "ICN",  # flake8-import-conventions
+    "PIE",  # flake8-pie
+    "BLE",  # flake8-blind-except
+    "SIM",  # flake8-simplify
+    "PTH",  # flake8-use-pathlib
+    "FIX",  # flake8-fixme
+    "N",  # pep8-naming
+    "UP",  # pyupgrade
+]
