@@ -6,7 +6,7 @@ FROM python:${PYTHON_VERSION}-slim AS build
 
 ARG WORKDIR_PATH
 
-COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+COPY --from=ghcr.io/astral-sh/uv:0.8.16 /uv /uvx /bin/
 
 WORKDIR ${WORKDIR_PATH}
 
