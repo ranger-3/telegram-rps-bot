@@ -339,7 +339,7 @@ wheels = [
 ]
 
 [[package]]
-name = "tg-rpc-bot"
+name = "telegram-rpc-bot"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
